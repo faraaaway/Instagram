@@ -1,13 +1,187 @@
+/* 바디 내 모든 모든 하위태그의 폰트사이즈는 2vw. 캐스캐이딩으로 인해 아래에 코드가 중복되면 밑의 코드가 실행 */
+body {
+    font-size: 2vw;
+}
+/* 하이라이트 사진과 프로필 img들에 적용 */
+.circle_pic {
+    border:  solid white 1px;
+    border-radius: 50%;
 
-h2 {
-    color: red;
+    /* 부모에 딱 맟춤 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+button {
+    height: 80%;
+    width: 95%;
+
+    font-size: 3vw;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
+/* 모든 fontawesome 아이콘 */
+i {
+    color: rgb(80, 80, 80);
 }
 
+
+
+/* 상단바 */
+#top {
+    display: grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    height: 8vw;
+    min-height: 8vw;
+    border-bottom: solid gray 0.1px;
+    margin-bottom: 3vw;
+}
+/* 상단바 내 이미지 */
+#top img{
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+    object-fit: contain;
+}
+/* 상단바 내 입력창 */
+#top input {
+    height: 60%;
+    width: 95%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 2vw;
+
+    text-align: center;
+    background-color: white;
+
+    border: solid gray 1px;
+    border-radius: 3px;
+
+    font-size: 3vw;
+    font-weight: 100;
+}
+/* 상단바 내부 아이콘들 */
+#top i {
+    font-size: 4vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+/* 상단바 내부 아이콘들을 담는 div */
+#top div {
+    text-align: center;
+    padding-top: 1.2vw;
+}
+
+
+
+
+
+
+
+/* 프로필 사진과 아이디/편집버튼 */
+#profile {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+}
+/* 프로필 사진을담는 div  */
+#profile_pic {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 15vw;
+    height: 15vw;
+}
+/* 아이디/편집버튼 담는 div */
+#profile_info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 15vw;
+}
+/* 프로필 내 아이디를 담는 div */
+#id{
+    font-size: 4vw;
+    font-weight: 100;
+}
+
+
+
+
+
+/* 하이라이트 영역 */
+#highlight_area{
+    display: grid;
+    grid-template-columns: 12vw 12vw 1fr;
+}
+/* 하이라이트 사진과 이모지를 담는 div들 */
 .highlight {
-    border: solid;
+    text-align: center;
+}
+/* 하이라이트 사진을 담는 div들 */
+.highlight_pic {
+    width: 10vw;
+    height: 10vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-    #profile {
-    border: solid;
-    border-color: blue;
+
+
+
+
+/* 게시물 팔로우,워 등의 정보를 나타내는 div들이 담긴 div */
+#stat_bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border-top:  1px solid gray;
+    border-bottom: 1px solid gray;
+
+    margin-top:  5px;
+    margin-bottom:  5px;
 }
+
+/* 게시물, 팔로우,워 등의 정보를 나타내는 div 3개*/
+.stat {
+    text-align: center;
+}
+
+
+
+
+
+/* 하단 아이콘들이 들어가는 div */
+#sub_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size: 5vw;
+
+
+    height: 8vw;
+}
+ /* 하단 아이콘 내부의 선택된 아이콘 */
+.selected {
+    border-bottom: solid rgb(80, 80, 80) 3px;
+
+}
+
+
+
+
+
+/* 썸네일 3개씩 들어있는 div */
+.thumbnail_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* 썸네일 img  */
+.thumbnail{
+    width: 100%;
+}
+
+

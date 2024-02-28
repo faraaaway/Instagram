@@ -1,83 +1,122 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/68a59a9351.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </head>
     <body>
+        <script>
+            
+        </script>
         
         <!-- 인스타그램 로고와 검색창 -->
-        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
-        <input type="search" value="검색"/>
-        <div id="profile">
-            <!-- 프로필 사진 및 프로필 편집 버튼 -->
-            <img src="image/profile.jpg" width="50px" height="50px"/>
+        <div id="top">
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
+            <input type="search" value="검색"/>
             <div>
-                <h2>half_bottle</h2>
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+            </div>
+        </div>
+        
+
+        <!-- 프로필 사진 및 프로필 편집 버튼 -->
+        <div id="profile">
+            <div id="profile_pic">
+                <img class="circle_pic" src="image/profile.jpg" width="50px" height="50px"/>
+            </div>
+            <div id="profile_info">
+                <div id="id">
+                    <span>half_bottle</span> 
+                    <i class="fas fa-cog"></i> 
+                </div>
                 <button>프로필 편집</button>
             </div>
         </div>
 
         <div>
             <p>
-                <strong>
-                    반병헌<br/>
-                </strong>
-                작가
+                <strong id="userInfo">반병헌</strong>
+                <br/>
+                <br/>
+                <span id="summary">작가</span>
             </p>
-            <p>
+            <p id="profileDetail">
                 <a href='needleworm.github.io'>needleworm.github.io</a>
             </p>
         </div>
-            <!-- 하이라이트 이미지를 담는 div -->
-            <div>
-                <div class="highlight">
-                    <img src="https://image.fmkorea.com/files/attach/new2/20210524/2063168106/2889212861/3624443038/d5cc6141f471b07dcdaf8a8eed9260e5.jpg", height="50px"/>
+        <div id="highlight_area">
+            <!-- 하이라이트 이미지들을 담는 div -->
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img class="circle_pic" src="https://image.fmkorea.com/files/attach/new2/20210524/2063168106/2889212861/3624443038/d5cc6141f471b07dcdaf8a8eed9260e5.jpg", height="50px"/>
                 </div>
                 <div>
                     😊
                 </div>
             </div>
-            <div>
-                <div class="highlight">
-                    <img src="https://image.mycelebs.com/celeb/sq/1953280_sq_01.jpg", height="50px"/>
+            
+            <div class="highlight">
+                <div class="highlight_pic">
+                    <img class="circle_pic" src="https://image.mycelebs.com/celeb/sq/1953280_sq_01.jpg", height="50px"/>
                 </div>
                 <div>
                     🥰
                 </div>
             </div>
-           
-        <div>
-            
+            <div></div>
         </div>
+            
 
-        <div>
-            <div>
+        <!-- 게시물 팔로우,워 등의 정보를 나타내는 div들이 담긴 div -->
+        <div id="stat_bar">
+            <div class="stat">
                 게시물<br/>
                 133
             </div>
 
-            <div>
+            <div class="stat">
                 팔로워<br/>
                 408
             </div>
 
-            <div>
+            <div class="stat">
                 팔로우<br/>
                 189
             </div>
         </div>
 
-        <div>아이콘이 들어갈 자리</div>
-        <!-- 게시물들이 들어가는 div -->
+        <!-- 하단 아이콘들이 들어가는 div -->
+        <div id="sub_icons">
+            <div class="selected"><i class="fas fa-border-all"></i></div>
+            <div><i class="fas fa-film"></i></div>
+            <div><i class="fas fa-play-circle"></i></div>
+            <div><i class="fas fa-bookmark"></i></div>
+            <div><i class="fas fa-user-tag"></i></div>
+        </div>
+        
+        <!-- 썸네일들이 들어가는 div -->
         <div>
-            <img src="image/thumbnail/1.png" width="32%"/>
-            <img src="image/thumbnail/2.png" width="32%"/>
-            <img src="image/thumbnail/3.png" width="32%"/>
-            <img src="image/thumbnail/4.png" width="32%"/>
-            <img src="image/thumbnail/5.png" width="32%"/>
-            <img src="image/thumbnail/6.png" width="32%"/>
-            <img src="image/thumbnail/7.png" width="32%"/>
-            <img src="image/thumbnail/8.png" width="32%"/>
-            <img src="image/thumbnail/9.png" width="32%"/>
+            <div class="thumbnail_grid">
+                <img src="image/thumbnail/1.png" width="32%" class="thumbnail"/>
+                <img src="image/thumbnail/2.png" width="32%" class="thumbnail"/>
+                <img src="image/thumbnail/3.png" width="32%" class="thumbnail"/>
+            </div>
+            <div class="thumbnail_grid">
+                <img src="image/thumbnail/4.png" width="32%" class="thumbnail"/>
+                <img src="image/thumbnail/5.png" width="32%" class="thumbnail"/>
+                <img src="image/thumbnail/6.png" width="32%" class="thumbnail"/>
+            </div>
+            <div class="thumbnail_grid">
+                <img src="image/thumbnail/7.png" width="32%" class="thumbnail"/>
+                <img src="image/thumbnail/8.png" width="32%" class="thumbnail"/>
+                <img src="image/thumbnail/9.png" width="32%" class="thumbnail"/>
+            </div>
+    
+            
+        
         </div>
     </body>
 </html>
